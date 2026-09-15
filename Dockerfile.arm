@@ -1,0 +1,5 @@
+FROM --platform=linux/arm64 gcc:13-bookworm
+
+WORKDIR /app
+
+CMD ["sh", "-c", "gcc -Wall -Wextra -o utf8_analyzer utf8_analyzer.c && ./utf8_analyzer"]
